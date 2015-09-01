@@ -2,7 +2,7 @@
 #define _pila_h_
 
 #include "funciones.h"
-// LIBRERIA compartido por TONY
+
 struct pila{
       int numero;
       double hllegada;

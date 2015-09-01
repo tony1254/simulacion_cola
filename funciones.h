@@ -1,6 +1,5 @@
 #define _funciones_h_
 #include "colores.h"
-// LIBRERIA DE TONY
 float urand(){
       return((float)rand()/RAND_MAX);
       }
@@ -21,7 +20,7 @@ float get_random(int n) {
     return rand() % n + 1;
 }
 
-// LIBRERIA DE TONY
+
 
 /*
 int main () {

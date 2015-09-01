@@ -21,5 +21,22 @@
 #include <iostream> 
   
 using namespace std;
-// LIBRERIA DE TONY
+void gotoxy(int column, int line)
+{
+    /*Creo variable con formato de coordenada y le asingo valores de los 
+      Prametros que recibi*/
+    COORD coord;
+    coord.X = column;
+    coord.Y = line;
+
+    /*Obtiene e inicialisa una varibale con el punto de handle*/
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    /*llamamos a la funcion que recibe el punto y las cooredenadas */
+    if (!SetConsoleCursorPosition(hConsole, coord))
+    {
+    	/*va aqui el error en caso que no se pueda ejecutar */
+       cout<<"\n\n\t\tERROR al ejecutar GotoXY\n\n";
+    }
+}
 
